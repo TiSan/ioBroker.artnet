@@ -765,7 +765,7 @@
             }
         },
 		{
-            "_id": "artnet.meta.stairville-floodpanel-150",
+            "_id": "artnet.meta.stairville-xbrick-fullcolour-16x3w",
             "type": "meta",
             "parent": "artnet.meta",
             "meta": {
@@ -773,13 +773,13 @@
                 "type": "fixture"
             },
             "common": {
-                "name": "Stairville Floodpanel 150 RGB"
+                "name": "Stairville xBrick 16x3W"
             },
             "native": {
                 "channel": {
                     "type": "channel",
                     "common": {
-                        "role": "light.stairville-floodpanel-150-8ch-mode"
+                        "role": "light.stairville-xbrick-fullcolour-16x3w-13ch-mode"
                     },
                     "native": {}
                 },
