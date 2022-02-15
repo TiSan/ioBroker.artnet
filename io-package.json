@@ -1,7 +1,7 @@
 {
     "common": {
         "name": "artnet-church",
-        "version": "1.3.0",
+        "version": "1.3.1",
         "news": {
             "1.2.2": {
                 "en": "Support of compact mode",
