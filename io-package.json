@@ -1,7 +1,7 @@
 {
     "common": {
-        "name": "artnet",
-        "version": "1.2.2",
+        "name": "artnet-church",
+        "version": "1.2.3",
         "news": {
             "1.2.2": {
                 "en": "Support of compact mode",
@@ -65,7 +65,7 @@
             "zh-cn": "通过Art-Net节点控制DMX512设备"
         },
         "authors": [
-            "hobbyquaker <hq@ccu.io>"
+            "hobbyquaker <hq@ccu.io> || tisan <me@tisan.de>"
         ],
         "license": "MIT",
         "platform": "Javascript/Node.js",
@@ -475,7 +475,175 @@
                         "native": {}
                     }
                 ]
+            },
+            {
+            "_id": "artnet.meta.adj-ub12h",
+            "type": "meta",
+            "parent": "artnet.meta",
+            "meta": {
+                "adapter": "artnet",
+                "type": "fixture"
+            },
+            "common": {
+                "name": "American DJ UB12H"
+            },
+            "native": {
+                "channel": {
+                    "type": "channel",
+                    "common": {
+                        "role": "light.12ch-mode"
+                    },
+                    "native": {}
+                },
+                "length": 12,
+                "states": [
+                    {
+                        "type": "state",
+                        "common": {
+                            "role": "level.color.red",
+                            "type": "number",
+                            "min": 0,
+                            "max": 255,
+                            "write": true,
+                            "read": false
+                        },
+                        "native": {}
+                    },
+                    {
+                        "type": "state",
+                        "common": {
+                            "role": "level.color.green",
+                            "type": "number",
+                            "min": 0,
+                            "max": 255,
+                            "write": true,
+                            "read": false
+                        },
+                        "native": {}
+                    },
+                    {
+                        "type": "state",
+                        "common": {
+                            "role": "level.color.blue",
+                            "type": "number",
+                            "min": 0,
+                            "max": 255,
+                            "write": true,
+                            "read": false
+                        },
+                        "native": {}
+                    },
+                    {
+                        "type": "state",
+                        "common": {
+                            "role": "level.color.white",
+                            "type": "number",
+                            "min": 0,
+                            "max": 255,
+                            "write": true,
+                            "read": false
+                        },
+                        "native": {}
+                    },
+                    {
+                        "type": "state",
+                        "common": {
+                            "role": "level.color.amber",
+                            "type": "number",
+                            "min": 0,
+                            "max": 255,
+                            "write": true,
+                            "read": false
+                        },
+                        "native": {}
+                    },
+                    {
+                        "type": "state",
+                        "common": {
+                            "role": "level.color.uv",
+                            "type": "number",
+                            "min": 0,
+                            "max": 255,
+                            "write": true,
+                            "read": false
+                        },
+                        "native": {}
+                    },
+                    {
+                        "type": "state",
+                        "common": {
+                            "role": "level.color.colorpreset",
+                            "type": "number",
+                            "min": 0,
+                            "max": 255,
+                            "write": true,
+                            "read": false
+                        },
+                        "native": {}
+                    },
+                    {
+                        "type": "state",
+                        "common": {
+                            "role": "level.color.program",
+                            "type": "number",
+                            "min": 0,
+                            "max": 255,
+                            "write": true,
+                            "read": false
+                        },
+                        "native": {}
+                    },
+                    {
+                        "type": "state",
+                        "common": {
+                            "role": "level.color.speed",
+                            "type": "number",
+                            "min": 0,
+                            "max": 255,
+                            "write": true,
+                            "read": false
+                        },
+                        "native": {}
+                    },
+                    {
+                        "type": "state",
+                        "common": {
+                            "role": "level.color.strobe",
+                            "type": "number",
+                            "min": 0,
+                            "max": 255,
+                            "write": true,
+                            "read": false
+                        },
+                        "native": {}
+                    },
+                    {
+                        "type": "state",
+                        "common": {
+                            "role": "level.color.master",
+                            "type": "number",
+                            "min": 0,
+                            "max": 255,
+                            "write": true,
+                            "read": false
+                        },
+                        "native": {}
+                    },
+                    {
+                        "type": "state",
+                        "common": {
+                            "role": "level.color.dimmer-curves",
+                            "type": "number",
+                            "min": 0,
+                            "max": 255,
+                            "write": true,
+                            "read": false
+                        },
+                        "native": {}
+                    }
+                ]
             }
+        }
         }
     ]
 }
