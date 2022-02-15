@@ -477,7 +477,7 @@
                 ]
             }
         },
-            {
+        {
             "_id": "artnet.meta.adj-ub12h",
             "type": "meta",
             "parent": "artnet.meta",
@@ -492,7 +492,7 @@
                 "channel": {
                     "type": "channel",
                     "common": {
-                        "role": "light.12ch-mode"
+                        "role": "light.adj-ub12h-12ch-mode"
                     },
                     "native": {}
                 },
@@ -634,6 +634,294 @@
                         "type": "state",
                         "common": {
                             "role": "level.color.dimmer-curves",
+                            "type": "number",
+                            "min": 0,
+                            "max": 255,
+                            "write": true,
+                            "read": false
+                        },
+                        "native": {}
+                    }
+                ]
+            }
+		},
+		{
+            "_id": "artnet.meta.stairville-floodpanel-150",
+            "type": "meta",
+            "parent": "artnet.meta",
+            "meta": {
+                "adapter": "artnet",
+                "type": "fixture"
+            },
+            "common": {
+                "name": "Stairville Floodpanel 150 RGB"
+            },
+            "native": {
+                "channel": {
+                    "type": "channel",
+                    "common": {
+                        "role": "light.stairville-floodpanel-150-8ch-mode"
+                    },
+                    "native": {}
+                },
+                "length": 8,
+                "states": [
+                    {
+                        "type": "state",
+                        "common": {
+                            "role": "level.color.master",
+                            "type": "number",
+                            "min": 0,
+                            "max": 255,
+                            "write": true,
+                            "read": false
+                        },
+                        "native": {}
+                    },{
+                        "type": "state",
+                        "common": {
+                            "role": "level.color.red",
+                            "type": "number",
+                            "min": 0,
+                            "max": 255,
+                            "write": true,
+                            "read": false
+                        },
+                        "native": {}
+                    },
+                    {
+                        "type": "state",
+                        "common": {
+                            "role": "level.color.green",
+                            "type": "number",
+                            "min": 0,
+                            "max": 255,
+                            "write": true,
+                            "read": false
+                        },
+                        "native": {}
+                    },
+                    {
+                        "type": "state",
+                        "common": {
+                            "role": "level.color.blue",
+                            "type": "number",
+                            "min": 0,
+                            "max": 255,
+                            "write": true,
+                            "read": false
+                        },
+                        "native": {}
+                    },
+                    {
+                        "type": "state",
+                        "common": {
+                            "role": "level.color.strobe",
+                            "type": "number",
+                            "min": 0,
+                            "max": 255,
+                            "write": true,
+                            "read": false
+                        },
+                        "native": {}
+                    },
+                    {
+                        "type": "state",
+                        "common": {
+                            "role": "level.color.program",
+                            "type": "number",
+                            "min": 0,
+                            "max": 255,
+                            "write": true,
+                            "read": false
+                        },
+                        "native": {}
+                    },
+                    {
+                        "type": "state",
+                        "common": {
+                            "role": "level.color.id",
+                            "type": "number",
+                            "min": 0,
+                            "max": 255,
+                            "write": true,
+                            "read": false
+                        },
+                        "native": {}
+                    },
+                    {
+                        "type": "state",
+                        "common": {
+                            "role": "level.color.delay",
+                            "type": "number",
+                            "min": 0,
+                            "max": 255,
+                            "write": true,
+                            "read": false
+                        },
+                        "native": {}
+                    }
+                ]
+            }
+        },
+		{
+            "_id": "artnet.meta.stairville-floodpanel-150",
+            "type": "meta",
+            "parent": "artnet.meta",
+            "meta": {
+                "adapter": "artnet",
+                "type": "fixture"
+            },
+            "common": {
+                "name": "Stairville Floodpanel 150 RGB"
+            },
+            "native": {
+                "channel": {
+                    "type": "channel",
+                    "common": {
+                        "role": "light.stairville-floodpanel-150-8ch-mode"
+                    },
+                    "native": {}
+                },
+                "length": 13,
+                "states": [
+                    {
+                        "type": "state",
+                        "common": {
+                            "role": "level.color.group1-red",
+                            "type": "number",
+                            "min": 0,
+                            "max": 255,
+                            "write": true,
+                            "read": false
+                        },
+                        "native": {}
+                    },{
+                        "type": "state",
+                        "common": {
+                            "role": "level.color.group1-green",
+                            "type": "number",
+                            "min": 0,
+                            "max": 255,
+                            "write": true,
+                            "read": false
+                        },
+                        "native": {}
+                    },{
+                        "type": "state",
+                        "common": {
+                            "role": "level.color.group1-blue",
+                            "type": "number",
+                            "min": 0,
+                            "max": 255,
+                            "write": true,
+                            "read": false
+                        },
+                        "native": {}
+                    },{
+                        "type": "state",
+                        "common": {
+                            "role": "level.color.group2-red",
+                            "type": "number",
+                            "min": 0,
+                            "max": 255,
+                            "write": true,
+                            "read": false
+                        },
+                        "native": {}
+                    },{
+                        "type": "state",
+                        "common": {
+                            "role": "level.color.group2-green",
+                            "type": "number",
+                            "min": 0,
+                            "max": 255,
+                            "write": true,
+                            "read": false
+                        },
+                        "native": {}
+                    },{
+                        "type": "state",
+                        "common": {
+                            "role": "level.color.group2-blue",
+                            "type": "number",
+                            "min": 0,
+                            "max": 255,
+                            "write": true,
+                            "read": false
+                        },
+                        "native": {}
+                    },{
+                        "type": "state",
+                        "common": {
+                            "role": "level.color.group3-red",
+                            "type": "number",
+                            "min": 0,
+                            "max": 255,
+                            "write": true,
+                            "read": false
+                        },
+                        "native": {}
+                    },{
+                        "type": "state",
+                        "common": {
+                            "role": "level.color.group3-green",
+                            "type": "number",
+                            "min": 0,
+                            "max": 255,
+                            "write": true,
+                            "read": false
+                        },
+                        "native": {}
+                    },{
+                        "type": "state",
+                        "common": {
+                            "role": "level.color.group3-blue",
+                            "type": "number",
+                            "min": 0,
+                            "max": 255,
+                            "write": true,
+                            "read": false
+                        },
+                        "native": {}
+                    },{
+                        "type": "state",
+                        "common": {
+                            "role": "level.color.group4-red",
+                            "type": "number",
+                            "min": 0,
+                            "max": 255,
+                            "write": true,
+                            "read": false
+                        },
+                        "native": {}
+                    },{
+                        "type": "state",
+                        "common": {
+                            "role": "level.color.group4-green",
+                            "type": "number",
+                            "min": 0,
+                            "max": 255,
+                            "write": true,
+                            "read": false
+                        },
+                        "native": {}
+                    },{
+                        "type": "state",
+                        "common": {
+                            "role": "level.color.group4-blue",
+                            "type": "number",
+                            "min": 0,
+                            "max": 255,
+                            "write": true,
+                            "read": false
+                        },
+                        "native": {}
+                    },
+					{
+                        "type": "state",
+                        "common": {
+                            "role": "level.color.master",
                             "type": "number",
                             "min": 0,
                             "max": 255,
