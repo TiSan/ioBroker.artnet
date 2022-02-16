@@ -932,6 +932,86 @@
                     }
                 ]
             }
+        },
+		{
+            "_id": "artnet.meta.stairville-xbrick-fullcolour-16x3w-5ch",
+            "type": "meta",
+            "parent": "artnet.meta",
+            "meta": {
+                "adapter": "artnet",
+                "type": "fixture"
+            },
+            "common": {
+                "name": "Stairville xBrick 16x3W 5ch"
+            },
+            "native": {
+                "channel": {
+                    "type": "channel",
+                    "common": {
+                        "role": "light.stairville-xbrick-fullcolour-16x3w-5ch-mode"
+                    },
+                    "native": {}
+                },
+                "length": 5,
+                "states": [
+                    {
+                        "type": "state",
+                        "common": {
+                            "role": "level.color.red",
+                            "type": "number",
+                            "min": 0,
+                            "max": 255,
+                            "write": true,
+                            "read": false
+                        },
+                        "native": {}
+                    },{
+                        "type": "state",
+                        "common": {
+                            "role": "level.color.green",
+                            "type": "number",
+                            "min": 0,
+                            "max": 255,
+                            "write": true,
+                            "read": false
+                        },
+                        "native": {}
+                    },{
+                        "type": "state",
+                        "common": {
+                            "role": "level.color.blue",
+                            "type": "number",
+                            "min": 0,
+                            "max": 255,
+                            "write": true,
+                            "read": false
+                        },
+                        "native": {}
+                    },{
+                        "type": "state",
+                        "common": {
+                            "role": "level.color.master",
+                            "type": "number",
+                            "min": 0,
+                            "max": 255,
+                            "write": true,
+                            "read": false
+                        },
+                        "native": {}
+                    },{
+                        "type": "state",
+                        "common": {
+                            "role": "level.color.strobe",
+                            "type": "number",
+                            "min": 0,
+                            "max": 255,
+                            "write": true,
+                            "read": false
+                        },
+                        "native": {}
+                    }
+                ]
+            }
         }
     ]
 }
