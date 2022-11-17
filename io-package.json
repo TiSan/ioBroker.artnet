@@ -1,7 +1,7 @@
 {
     "common": {
         "name": "artnet-church",
-        "version": "1.3.1",
+        "version": "1.3.2",
         "news": {
             "1.2.2": {
                 "en": "Support of compact mode",
@@ -1010,6 +1010,199 @@
                         },
                         "native": {}
                     }
+                ]
+            }
+        },
+        {
+            "_id": "artnet.meta.lixada-led-mini-moving-head-14ch",
+            "type": "meta",
+            "parent": "artnet.meta",
+            "meta": {
+                "adapter": "artnet",
+                "type": "fixture"
+            },
+            "common": {
+                "name": "lixada LED Mini Moving Head 14ch"
+            },
+            "native": {
+                "channel": {
+                    "type": "channel",
+                    "common": {
+                        "role": "light.lixada-led-mini-moving-head-14ch-mode"
+                    },
+                    "native": {}
+                },
+                "length": 14,
+                "states": [
+                    {
+                        "type": "state",
+                        "common": {
+                            "role": "level.motor.pan",
+                            "type": "number",
+                            "min": 0,
+                            "max": 255,
+                            "write": true,
+                            "read": false
+                        },
+                        "native": {}
+                    },
+                    {
+                        "type": "state",
+                        "common": {
+                            "role": "level.motor.pan-fine",
+                            "type": "number",
+                            "min": 0,
+                            "max": 255,
+                            "write": true,
+                            "read": false
+                        },
+                        "native": {}
+                    },
+                    {
+                        "type": "state",
+                        "common": {
+                            "role": "level.motor.tilt",
+                            "type": "number",
+                            "min": 0,
+                            "max": 255,
+                            "write": true,
+                            "read": false
+                        },
+                        "native": {}
+                    },
+                    {
+                        "type": "state",
+                        "common": {
+                            "role": "level.motor.tilt-fine",
+                            "type": "number",
+                            "min": 0,
+                            "max": 255,
+                            "write": true,
+                            "read": false
+                        },
+                        "native": {}
+                    },
+                    {
+                        "type": "state",
+                        "common": {
+                            "role": "level.motor.pan-tilt-speed",
+                            "type": "number",
+                            "min": 0,
+                            "max": 255,
+                            "write": true,
+                            "read": false
+                        },
+                        "native": {}
+                    },
+                    {
+                        "type": "state",
+                        "common": {
+                            "role": "level.color.dimmer",
+                            "type": "number",
+                            "min": 0,
+                            "max": 255,
+                            "write": true,
+                            "read": false
+                        },
+                        "native": {}
+                    },
+                    {
+                        "type": "state",
+                        "common": {
+                            "role": "level.color.red",
+                            "type": "number",
+                            "min": 0,
+                            "max": 255,
+                            "write": true,
+                            "read": false
+                        },
+                        "native": {}
+                    },
+                    {
+                        "type": "state",
+                        "common": {
+                            "role": "level.color.green",
+                            "type": "number",
+                            "min": 0,
+                            "max": 255,
+                            "write": true,
+                            "read": false
+                        },
+                        "native": {}
+                    },
+                    {
+                        "type": "state",
+                        "common": {
+                            "role": "level.color.blue",
+                            "type": "number",
+                            "min": 0,
+                            "max": 255,
+                            "write": true,
+                            "read": false
+                        },
+                        "native": {}
+                    },
+                    {
+                        "type": "state",
+                        "common": {
+                            "role": "level.color.white",
+                            "type": "number",
+                            "min": 0,
+                            "max": 255,
+                            "write": true,
+                            "read": false
+                        },
+                        "native": {}
+                    },
+                    {
+                        "type": "state",
+                        "common": {
+                            "role": "level.color.presets",
+                            "type": "number",
+                            "min": 0,
+                            "max": 255,
+                            "write": true,
+                            "read": false
+                        },
+                        "native": {}
+                    },
+                    {
+                        "type": "state",
+                        "common": {
+                            "role": "level.color.presets-speed",
+                            "type": "number",
+                            "min": 0,
+                            "max": 255,
+                            "write": true,
+                            "read": false
+                        },
+                        "native": {}
+                    },
+                    {
+                        "type": "state",
+                        "common": {
+                            "role": "level.color.behaviour",
+                            "type": "number",
+                            "min": 0,
+                            "max": 255,
+                            "write": true,
+                            "read": false
+                        },
+                        "native": {}
+                    },
+                    {
+                        "type": "state",
+                        "common": {
+                            "role": "level.fixture.reset",
+                            "type": "boolean",
+                            "write": true,
+                            "read": false
+                        },
+                        "native": {
+                            "value_off": 0,
+                            "value_on": 198
+                        }
+                    }    
                 ]
             }
         }
